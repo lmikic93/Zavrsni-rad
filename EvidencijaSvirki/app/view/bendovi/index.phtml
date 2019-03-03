@@ -1,0 +1,43 @@
+<a href="<?php echo App::config("url") ?>bend/prepareadd" class="success button expanded">
+    Dodaj novi bend
+</a>
+<table>
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th class="hide-for-small-only">Korisničko ime</th>
+            <th class="hide-for-small-only">Lozinka</th>
+            <th class="hide-for-small-only">Email</th>
+            <th>Verificiran</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($bendovi as $bend): ?>
+        <tr>
+            <td><?php echo $bend->naziv ?></td>
+            <td class="hide-for-small-only"><?php echo $bend->korisnickoime ?></td>
+            <td class="hide-for-small-only"><?php echo $bend->lozinka ?></td>
+            <td class="hide-for-small-only"><?php echo $bend->email ?></td>
+            <td>
+            
+            
+            
+            </td>
+            <td> 
+                <a href="<?php echo App::config("url") ?>bend/prepareedit/<?php echo $bend->sifra ?>">
+                    <i class="fas fa-edit fa-2x"></i>
+                </a>
+
+                <?php if($bend->ukupno==0): ?>
+                    <a style="color: red;"
+                     href="<?php echo App::config("url") ?>bend/delete/<?php echo $bend->sifra ?>">
+                        <i class="fas fa-trash fa-2x"></i>
+                    </a>
+                <?php endif; ?>
+            
+             </td>
+        </tr>
+        <?php endforeach;?>
+    </tbody>
+</table>
