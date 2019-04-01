@@ -112,7 +112,7 @@ class BendController extends ProtectedController
         $view->render(
             'bendovi/index',
             [
-            "bendovi"=>Bendovi::read()
+            "bendovi"=>Bend::read()
             ]
         );
     }
