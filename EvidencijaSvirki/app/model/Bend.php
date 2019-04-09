@@ -15,7 +15,7 @@ class Bend
                     a.lozinka,
                     a.email,
                     count(b.sifra) as ukupno from 
-                    bend a left join grupa b on a.sifra=b.bend
+                    bend a left join clan b on a.sifra=b.bend
                     group by 
                     a.sifra,
                     a.naziv,

@@ -64,13 +64,16 @@ class BendController extends ProtectedController
             return "Naziv postoji, odaberite drugi";
         }
 
-
-        if(intval(Request::post("trajanje"))<=0){
-            return "Trajanje nije broj ili je manje od nula";
+        if(Request::post("korisnickoime")===""){
+            return "Korisničko ime obavezno";
         }
 
-        if(Request::post("cijena")===""){
-            return "Cijena obavezno";
+        if(Request::post("lozinka")===""){
+            return "Lozinka obavezno";
+        }
+
+       if(Request::post("email")===""){
+            return "Email obavezan";
         }
 
 
