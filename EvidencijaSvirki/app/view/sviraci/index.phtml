@@ -1,24 +1,26 @@
-<a href="<?php echo App::config("url") ?>polaznik/add" class="success button expanded">
-    Dodaj novog polaznika
+<a href="<?php echo App::config("url") ?>svirac/add" class="success button expanded">
+    Dodaj novog sviraca
 </a>    
 <div class="grid-x">
-    <?php foreach($polaznici as $p): ?>
+    <?php foreach($sviraci as $svirac): ?>
     <div class="cell large-3">
         <div class="success callout operateri">
-            <img src="https://randomuser.me/api/portraits/<?php echo rand(1,10)<5 ? "women" : "men" ?>/<?php echo rand(1,100) ?>.jpg" alt="" />
-            <h1><?php echo $p->ime?>
+            <!--<img src="https://randomuser.me/api/portraits/<?php echo rand(1,10)<5 ? "women" : "men" ?>/<?php echo rand(1,100) ?>.jpg" alt="" />-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lakeyboy_Silhouette.PNG" alt="" style="width: 150px; height: 150px;">
+            <h1><?php echo $svirac->ime?>
     <br />
-    <?php echo $p->prezime?>
+    <?php echo $svirac->prezime?>
     </h1>
-    <?php echo $p->email?>
+    <?php echo $svirac->email?>
+    <h4><?php echo $svirac->naziv_bend?></h4>
     <hr />
-    <a href="<?php echo App::config("url") ?>polaznik/prepareedit/<?php echo $p->sifra ?>">
+    <a href="<?php echo App::config("url") ?>svirac/prepareedit/<?php echo $svirac->sifra ?>">
         <i class="fas fa-edit fa-2x"></i>
     </a>
 
-    <?php if($p->brojgrupa==0): ?>
+    <?php if($svirac->ukupno==0): ?>
         <a style="color: red;"
-            href="<?php echo App::config("url") ?>polaznik/delete/<?php echo $p->sifra ?>">
+            href="<?php echo App::config("url") ?>svirac/delete/<?php echo $svirac->sifra ?>">
             <i class="fas fa-trash fa-2x"></i>
         </a>
     <?php endif; ?>
@@ -30,7 +32,7 @@
 </div>
 <nav aria-label="Pagination">
   <ul class="pagination text-center">
-    <li class="pagination-previous"><a href="<?php echo App::config("url") ?>polaznik/index/<?php echo $prethodna ?>" aria-label="Next page">Prethodna <span class="show-for-sr">page</span></a></li>
-    <li class="pagination-next"><a href="<?php echo App::config("url") ?>polaznik/index/<?php echo $sljedeca ?>" aria-label="Next page">Sljedeća <span class="show-for-sr">page</span></a></li>
+    <li class="pagination-previous"><a href="<?php echo App::config("url") ?>svirac/index/<?php echo $prethodna ?>" aria-label="Next page">Prethodna <span class="show-for-sr">page</span></a></li>
+    <li class="pagination-next"><a href="<?php echo App::config("url") ?>svirac/index/<?php echo $sljedeca ?>" aria-label="Next page">Sljedeća <span class="show-for-sr">page</span></a></li>
   </ul>
 </nav>

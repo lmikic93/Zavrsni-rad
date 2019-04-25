@@ -1,40 +1,39 @@
-<a href="<?php echo App::config("url") ?>grupa/add" class="success button expanded">
-    Dodaj novu grupu
+<a href="<?php echo App::config("url") ?>nastup/prepareadd" class="success button expanded">
+    Dodaj novi nastup
 </a>
 <table>
     <thead>
         <tr>
-            <th>Naziv</th>
-            <th class="hide-for-small-only">Smjer</th>
-            <th class="hide-for-small-only">Predavač</th>
-            <th class="hide-for-small-only">Datum početka</th>
-            <th>Akcija</th>
+            <th>Datum pocetka</th>
+            <th>Cijena</th>
+            <th>Adresa</th>
+            <th>Vrsta svirke</th>
+            <th>Bend</th>
+     
         </tr>
     </thead>
     <tbody>
-        <?php foreach($grupe as $grupa): ?>
+        <?php foreach($nastupi as $nastup): ?>
         <tr>
-            <td><?php echo $grupa->naziv ?></td>
-            <td class="hide-for-small-only"><?php echo $grupa->smjer ?></td>
-            <td class="hide-for-small-only"><?php 
-            
-            echo $grupa->predavac==null ? "Nije definirano" : $grupa->predavac; ?></td>
-            <td class="hide-for-small-only"><?php 
-            if($grupa->datumpocetka!=null){
-                echo date("d. m. Y.",strtotime($grupa->datumpocetka));
-              }else{
-                  echo "Nije definirano";
-              }
-          ?></td>
-        
+            <td><?php echo $nastup->datumpocetka ?></td>
+            <td><?php echo $nastup->cijena ?></td>
+            <td><?php echo $nastup->adresa ?></td>
+            <td><?php echo $nastup->vrstasvirke ?></td>  
+            <td><?php echo $nastup->bend_nastup ?></td>
+
+<!--            <td>-->
+<!--            -->
+<!--            <i class="fa--><?php //echo $smjer->verificiran ? "s" : "r" ?><!-- fa-check-square"></i>-->
+<!--            -->
+<!--            </td>-->
             <td> 
-                <a href="<?php echo App::config("url") ?>grupa/prepareedit/<?php echo $grupa->sifra ?>">
-                    <i class="fas fa-edit fa-2x"></i>
+                <a href="<?php echo App::config("url") ?>nastup/prepareedit/<?php echo $nastup->sifra ?>">
+                    <i style ="color:green;" class="fas fa-edit fa-2x"></i>
                 </a>
 
-                <?php if($grupa->ukupno==0): ?>
+                <?php if($nastup->ukupno==0): ?>
                     <a style="color: red;"
-                     href="<?php echo App::config("url") ?>grupa/delete/<?php echo $grupa->sifra ?>">
+                     href="<?php echo App::config("url") ?>nastup/delete/<?php echo $nastup->sifra ?>">
                         <i class="fas fa-trash fa-2x"></i>
                     </a>
                 <?php endif; ?>

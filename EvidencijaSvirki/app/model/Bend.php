@@ -9,20 +9,12 @@ class Bend
         $izraz = $db->prepare("
         
                     select 
-                    a.sifra,
-                    a.naziv,
-                    a.korisnickoime,
-                    a.lozinka,
-                    a.email,
-                    count(b.sifra) as ukupno from 
-                    bend a left join clan b on a.sifra=b.bend
-                    group by 
-                    a.sifra,
-                    a.naziv,
-                    a.korisnickoime,
-                    a.lozinka,
-                    a.email
-                    order by a.naziv
+                    sifra,
+                    naziv,
+                    korisnickoime,
+                    lozinka,
+                    email
+                    from bend
 
         ");
         $izraz->execute();
@@ -52,12 +44,14 @@ class Bend
         naziv=:naziv,
         korisnickoime=:korisnickoime,
         lozinka=:lozinka,
-        email=:email,
+        email=:email
         where sifra=:sifra");
         $podaci = self::podaci();
         $podaci["sifra"]=$id;
         $izraz->execute($podaci);
     }
+
+
 
     public static function delete($id)
     {

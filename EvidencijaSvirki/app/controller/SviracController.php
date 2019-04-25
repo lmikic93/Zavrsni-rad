@@ -3,10 +3,7 @@
 class SviracController extends ProtectedController
 {
 
-    function traziSvirac(){
-        echo json_encode(Svirac::traziSvirac($_GET["term"]));
-    }
-
+    
     function delete($id)
     {
             Svirac::delete($id);
@@ -24,7 +21,7 @@ class SviracController extends ProtectedController
         }else{
             $view = new View();
             $view->render(
-                'polaznici/edit',
+                'sviraci/edit',
                 [
                 "poruka"=>$kontrola
                 ]
@@ -33,72 +30,114 @@ class SviracController extends ProtectedController
 
     }
 
-    private function kontrola(){
-
-        if(!Utillity::checkOib(Request::post("oib"))){
-            return "OIB nije u dobrom formatu";
+    function kontrola()
+    {
+        if(Request::post("ime")===""){
+            return "Ime je obavezno";
+        }
+        if(strlen(Request::post("naziv"))>100){
+            return "Ime ne smije biti veće od 100 znakova";
+        }
+        $db = Db::getInstance();
+        $izraz = $db->prepare("select count(sifra) from svirac where ime=:ime and sifra<>:sifra");
+        $izraz->execute(["ime"=>Request::post("ime"), "sifra"=> Request::post("sifra")]);
+        $ukupno = $izraz->fetchColumn();
+        
+        if(strlen(Request::post("prezime"))>100){
+            return "Prezime ne smije biti veće od 100 znakova";
+        }
+        if(Request::post("email")===""){
+            return "Email obavezan";
         }
 
+        if(Request::post("bend")===""){
+            return "Bend obavezno";
+        }
+
+       
         return true;
     }
 
-    function prepareedit($id){
+    function prepareadd()
+    {
         $view = new View();
-        $svirac = Svirac::find($id);
-        $_POST = (array)$svirac;
         $view->render(
-            'polaznici/edit',
+            'sviraci/new',
             [
             "poruka"=>""
             ]
         );
     }
 
-    function add(){
-        $this->prepareedit(Svirac::add());
+    function prepareedit($id)
+    {
+        $view = new View();
+        $svirac = Svirac::find($id);
+        $_POST["ime"]=$svirac->ime;
+        $_POST["prezime"]=$svirac->prezime;
+        $_POST["email"]=$svirac->email;
+        $_POST["bend"]=$svirac->bend;
+        $_POST["sifra"]=$svirac->sifra;
+        $view->render(
+            'sviraci/edit',
+            [
+            "poruka"=>""
+            ]
+        );
+     }
+
+    
+
+    function add()
+    {
+        $kontrola = $this->kontrola();
+        if($kontrola===true){
+            Svirac::add();
+            $this->index();
+        }else{
+            $view = new View();
+            $view->render(
+                'sviraci/new',
+                [
+                "poruka"=>$kontrola
+                ]
+            );
+        }
     }
 
 
-    function index($stranica=1){
-        if($stranica<=0){
-            $stranica=1;
-        }
-        if($stranica===1){
-            $prethodna=1;
-        }else{
-            $prethodna=$stranica-1;
-        }
-        $sljedeca=$stranica+1;
 
+    // function index($stranica=1){
+    //     if($stranica<=0){
+    //         $stranica=1;
+    //     }
+    //     if($stranica===1){
+    //         $prethodna=1;
+    //     }else{
+    //         $prethodna=$stranica-1;
+    //     }
+    //     $sljedeca=$stranica+1;
+
+    //     $view = new View();
+    //     $view->render(
+    //         'sviraci/index',
+    //         [
+    //         "sviraci"=>Svirac::read($stranica),
+    //         "prethodna"=>$prethodna,
+    //         "sljedeca"=>$sljedeca
+    //         ]
+    //     );
+    // }
+     function index(){
         $view = new View();
         $view->render(
-            'polaznici/index',
+            'sviraci/index',
             [
-            "polaznici"=>Svirac::read($stranica),
-            "prethodna"=>$prethodna,
-            "sljedeca"=>$sljedeca
+                "sviraci"=>Svirac::read()
             ]
         );
     }
 
 
-   public function __bulkinsert()
-   {
-
-    $db = Db::getInstance();
-
-    $db->beginTransaction();
-    for($i=1;$i<=2225;$i++){
-        $izraz = $db->prepare("insert into bend (sifra,oib,ime,prezime,email) values
-        (null,null,'Svirac','$i','svirac$i@gmail.com')");
-        $izraz->execute();
-        $zadnjaBendSifra = $db->lastInsertId();
-        $izraz = $db->prepare("insert into svirac(sifra,bend,brojugovora) values 
-        (null,$zadnjaBendSifra,null)");
-        $izraz->execute();
-        
-    }
-    $db->commit();
-    echo "Sve OK";
-   } 
+   
 }

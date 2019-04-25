@@ -1,132 +1,67 @@
 <?php
-
-class Grupa
+class Nastup
 {
-
-    public static function dodajPolaznika($grupa,$polaznik)
-    {
-        $db = Db::getInstance();
-        $db->beginTransaction();
-
-        $izraz = $db->prepare("
-                 select count(*) from svirac_nastup where grupa=:grupa and polaznik=:polaznik;
-        ");
-        $izraz->execute(["grupa"=>$grupa, "polaznik"=>$polaznik]);
-        $ukupno = $izraz->fetchColumn();
-        $vrati="";
-        if($ukupno>0){
-            $vrati= "Polaznik postoji na grupi, nije dodan";
-        }else{
-            $izraz = $db->prepare("
-            insert into svirac_nastup(grupa,polaznik) values (:grupa,:polaznik);
-            ");
-            $izraz->execute(["grupa"=>$grupa, "polaznik"=>$polaznik]);
-            $vrati="OK";
-        }
-
-        
-        $db->commit();
-        return $vrati;
-    }
-
-
-    public static function obrisiPolaznika($grupa,$polaznik)
-    {
-        $db = Db::getInstance();
-
-        $izraz = $db->prepare("
-                delete from svirac_nastup where grupa=:grupa and polaznik=:polaznik;
-        ");
-        $izraz->execute(["grupa"=>$grupa, "polaznik"=>$polaznik]);
-       
-        return "OK";
-    }
-
     public static function read()
     {
         $db = Db::getInstance();
         $izraz = $db->prepare("
-        
-                  select 
-                  a.sifra,
-                  a.naziv,
-                  b.naziv as smjer,
-                  concat(d.ime, ' ',d.prezime) as predavac,
-                  a.datumpocetka,
-                  count(e.polaznik) as ukupno
-                  from grupa a 
-                  left join smjer      b on a.smjer    =b.sifra
-                  left join predavac   c on a.predavac =c.sifra
-                  left join osoba      d on c.osoba    =d.sifra
-                  left join svirac_nastup        e on a.sifra    =e.grupa
-                  group by a.sifra,a.naziv,b.naziv,concat(d.ime, ' ',d.prezime),a.datumpocetka
-
-        ");
+                select 
+                a.sifra,
+                a.datumpocetka,
+                a.cijena,
+                a.adresa,
+                a.vrstasvirke,
+                a.bend,
+                b.naziv as bend_nastup
+                from nastup a left join
+                bend b on a.bend=b.sifra
+       ");
         $izraz->execute();
         return $izraz->fetchAll();
     }
-
     public static function find($id)
     {
         $db = Db::getInstance();
-        $izraz = $db->prepare("select * from grupa where sifra=:sifra");
+        $izraz = $db->prepare("select * from nastup where sifra=:sifra");
         $izraz->execute(["sifra"=>$id]);
         return $izraz->fetch();
     }
-//mjenjati nadolje
     public static function add()
     {
         $db = Db::getInstance();
-        $izraz = $db->prepare("insert into grupa (naziv,smjer,predavac,datumpocetka, brojpolaznika) 
-        values ('',null,null,now(),null)");
-        $izraz->execute();
-        return $db->lastInsertId();
+        $izraz = $db->prepare("insert into nastup (datumpocetka,cijena,adresa,vrstasvirke,bend)
+        values (:datumpocetka,:cijena,:adresa,:vrstasvirke,:bend)");
+        $izraz->execute(self::podaci());
     }
-
     public static function update($id)
     {
         $db = Db::getInstance();
-        $izraz = $db->prepare("update grupa set 
-        naziv=:naziv,
-        smjer=:smjer,
-        predavac=:predavac,
+        $izraz = $db->prepare("update nastup set 
         datumpocetka=:datumpocetka,
-        brojpolaznika=:brojpolaznika
+        cijena=:cijena,
+        adresa=:adresa,
+        vrstasvirke=:vrstasvirke,
+        bend=:bend
         where sifra=:sifra");
-        
-        $izraz->bindParam("naziv",Request::post("naziv"),PDO::PARAM_STR);
-        $izraz->bindParam("smjer",Request::post("smjer"),PDO::PARAM_INT);
-
-        if(Request::post("predavac")=="0"){
-            $izraz->bindValue("predavac",null,PDO::PARAM_NULL);
-        }else{
-            $izraz->bindParam("predavac",Request::post("predavac"),PDO::PARAM_INT);
-        }
-
-        if(Request::post("datumpocetka")==""){
-            $izraz->bindValue("datumpocetka",null,PDO::PARAM_NULL);
-        }else{
-            $izraz->bindParam("datumpocetka",Request::post("datumpocetka"),PDO::PARAM_STR);
-        }
-
-        $izraz->bindParam("brojpolaznika",Request::post("brojpolaznika"),PDO::PARAM_INT);
-
-        $izraz->bindParam("sifra",$id,PDO::PARAM_INT);
-
-
-        $izraz->execute();
+        $podaci = self::podaci();
+        $podaci["sifra"]=$id;
+        $izraz->execute($podaci);
     }
-
     public static function delete($id)
     {
         $db = Db::getInstance();
-        $izraz = $db->prepare("delete from grupa where sifra=:sifra");
+        $izraz = $db->prepare("delete from nastup where sifra=:sifra");
         $podaci = [];
         $podaci["sifra"]=$id;
         $izraz->execute($podaci);
     }
-
-  
-
-
+    private static function podaci(){
+        return [
+            "datumpocetka"=>Request::post("datumpocetka"),
+            "cijena"=>Request::post("cijena"),
+            "adresa"=>Request::post("adresa"),
+            "vrstasvirke"=>Request::post("vrstasvirke"),
+            "bend"=>Request::post("bend")
+        ];
+    }
 }

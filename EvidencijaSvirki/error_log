@@ -1,0 +1,226 @@
+[25-Apr-2019 00:09:33 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 00:10:51 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 00:11:19 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 00:11:35 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:31
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(31): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(22): Svirac::update(NULL)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->edit()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 31
+[25-Apr-2019 00:16:15 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 08:23:33 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 08:25:29 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:58
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(58): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(29): Bend::update(10)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(49): BendController->edit(10)
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 58
+[25-Apr-2019 08:28:15 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 08:29:09 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:58
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(58): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(29): Bend::update(10)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(49): BendController->edit(10)
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 58
+[25-Apr-2019 08:51:59 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:14:21 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:15:01 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:26:54 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:32:03 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(100): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:35:59 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(98): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:46:48 Europe/Zagreb] PHP Fatal error:  Call to undefined method Svirac::read() in /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php on line 128
+[25-Apr-2019 09:47:47 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(98): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:50:35 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(98): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:51:46 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(98): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:52:33 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(98): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:52:42 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(98): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 09:56:41 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:48
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(48): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(98): Svirac::add()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->add()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 48
+[25-Apr-2019 10:15:58 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:58
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(58): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(29): Bend::update(10)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(49): BendController->edit(10)
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 58
+[25-Apr-2019 10:17:29 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where sifra='10'' at line 6' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:59
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(59): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(29): Bend::update(10)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(49): BendController->edit(10)
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 59
+[25-Apr-2019 10:22:30 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where sifra=NULL' at line 6' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:31
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(31): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(22): Svirac::update(NULL)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->edit()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 31
+[25-Apr-2019 10:33:10 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:16
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(16): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(12): Svirac::delete(NULL)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->delete()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 16
+[25-Apr-2019 10:44:02 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where sifra=NULL' at line 6' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:31
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(31): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(22): Svirac::update(NULL)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->edit()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 31
+[25-Apr-2019 10:48:28 Europe/Zagreb] PHP Fatal error:  Call to undefined method Svirac::find() in /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php on line 78
+[25-Apr-2019 11:55:50 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where sifra='11'' at line 6' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:59
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(59): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(29): Bend::update(11)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(49): BendController->edit(11)
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 59
+[25-Apr-2019 12:14:27 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where sifra='12'' at line 6' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:59
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(59): PDOStatement->execute(Array)
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(29): Bend::update(12)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(49): BendController->edit(12)
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 59

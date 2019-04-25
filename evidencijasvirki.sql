@@ -8,7 +8,7 @@ create table bend (
 	email 			varchar(100) not null
 );
 
-create table clan (
+create table svirac (
 	sifra 			int not null primary key auto_increment,
 	ime 			varchar(50) not null,
 	prezime 		varchar(50) not null,
@@ -18,37 +18,20 @@ create table clan (
 
 create table nastup (
 	sifra 			int not null primary key auto_increment,
-	vrstasvirke 	int not null,
 	datumpocetka 	datetime,
 	cijena			decimal(18,2) not null,
 	adresa			varchar(100) not null,
+	vrstasvirke		varchar(100) not null,
 	bend			int not null
 );
 
-create table vrstasvirke (
-	sifra			int not null primary key auto_increment,
-	svatovi			varchar(100) not null,
-	pratnja			varchar(100) not null,
-	rodendan		varchar(100) not null,
-	javno			varchar(100) not null,
-	caffebar		varchar(100) not null,
-	ostalo			varchar(100) not null
-);
-
-create table clan_nastup (
-	clan 			int not null,
-	nastup 			int not null,
-	zarada			decimal(18,2) not null
-);
 
 
-alter table clan add foreign key (bend) references bend(sifra);
+
+alter table svirac add foreign key (bend) references bend(sifra);
 
 alter table nastup add foreign key (bend) references bend(sifra);
-alter table nastup add foreign key (vrstasvirke) references vrstasvirke(sifra);
 
-alter table clan_nastup add foreign key (clan) references clan(sifra);
-alter table clan_nastup add foreign key (nastup) references nastup(sifra);
 
 insert into bend (sifra,naziv,korisnickoime,lozinka,email) values
 (null,'Bend 01','bend01','12345','bend01@gmail.com'),
@@ -56,6 +39,13 @@ insert into bend (sifra,naziv,korisnickoime,lozinka,email) values
 (null,'Bend 03','bend03','12345','bend03@gmail.com'),
 (null,'Bend 04','bend04','12345','bend04@gmail.com'),
 (null,'Bend 05','bend05','12345','bend05@gmail.com');
+
+insert into svirac (sifra,ime,prezime,email,bend) values
+(null,'Ivan','Ivic','ivan@gmail.com', 1),
+(null,'Marko','Maric','marko@gmail.com', 2),
+(null,'Josip','Josipovic','josip@gmail', 3),
+(null,'Luka','Lukic','luka@gmail.com', 4),
+(null,'Gabriel','Lustig','gabriel@gmail.com', 5);
 
 create table operater(
 	sifra int not null primary key auto_increment,
