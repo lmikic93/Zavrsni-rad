@@ -3,8 +3,9 @@
 class Bend
 {
 
-    public static function read()
+    public static function read($stranica)
     {
+        $poStranici=10;
         $db = Db::getInstance();
         $izraz = $db->prepare("
         
@@ -15,6 +16,8 @@ class Bend
                     lozinka,
                     email
                     from bend
+                    order by naziv
+                    limit " . (($stranica*$poStranici) - $poStranici) . ",$poStranici
 
         ");
         $izraz->execute();

@@ -5,8 +5,9 @@ class Svirac
 
 
     
-public static function read()
+public static function read($stranica)
     {
+        $poStranici=8;
         $db = Db::getInstance();
         $izraz = $db->prepare("
             select
@@ -18,6 +19,8 @@ public static function read()
                    b.naziv as naziv_bend
                    from svirac a left join
                    bend b on a.bend=b.sifra
+                   order by a.ime
+                   limit " . (($stranica*$poStranici) - $poStranici) . ",$poStranici
                   
        ");
         $izraz->execute();

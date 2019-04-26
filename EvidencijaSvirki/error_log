@@ -224,3 +224,383 @@ Stack trace:
 #3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
 #4 {main}
   thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 59
+[25-Apr-2019 19:34:31 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:21
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(21): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 21
+[25-Apr-2019 19:35:55 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:21
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(21): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 21
+[25-Apr-2019 19:38:06 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:38:20 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:38:57 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.bend as bend_svirac
+                from svirac a left join
+                b' at line 7' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:38:59 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.bend as bend_svirac
+                from svirac a left join
+                b' at line 7' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:38:59 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.bend as bend_svirac
+                from svirac a left join
+                b' at line 7' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:41:56 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:44:02 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:44:08 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:44:49 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'on clause'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:21
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(21): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 21
+[25-Apr-2019 19:46:11 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.svirac' in 'on clause'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:21
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(21): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 21
+[25-Apr-2019 19:46:24 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.svirac' in 'on clause'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:21
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(21): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 21
+[25-Apr-2019 19:51:44 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(125): Svirac::read(1)
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 19:54:04 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(136): Svirac::read()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 20:00:39 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.bend' in 'field list'' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:22
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(22): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(136): Svirac::read()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 22
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:51:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:51:56 Europe/Zagreb] PHP Notice:  Trying to get property of non-object in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 96
+[25-Apr-2019 20:51:56 Europe/Zagreb] PHP Notice:  Trying to get property of non-object in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 97
+[25-Apr-2019 20:51:56 Europe/Zagreb] PHP Notice:  Trying to get property of non-object in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 98
+[25-Apr-2019 20:51:56 Europe/Zagreb] PHP Notice:  Trying to get property of non-object in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 99
+[25-Apr-2019 20:51:56 Europe/Zagreb] PHP Notice:  Trying to get property of non-object in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 100
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 23
+[25-Apr-2019 20:52:00 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:00:18 Europe/Zagreb] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/hiperion/public_html/EvidencijaSvirki/app/view/layout.phtml:4) in /home/hiperion/public_html/EvidencijaSvirki/app/model/Session.php on line 11
+[25-Apr-2019 21:00:24 Europe/Zagreb] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/hiperion/public_html/EvidencijaSvirki/app/view/layout.phtml:4) in /home/hiperion/public_html/EvidencijaSvirki/app/model/Session.php on line 11
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:00:27 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:01:08 Europe/Zagreb] PHP Notice:  Undefined variable: nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 16
+[25-Apr-2019 21:01:08 Europe/Zagreb] PHP Warning:  Invalid argument supplied for foreach() in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 16
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$datumpocetka in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 18
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$cijena in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 19
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$adresa in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 20
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$vrstasvirke in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 21
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$bend_nastup in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 22
+[25-Apr-2019 21:03:26 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:05:06 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:05:06 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:08:54 Europe/Zagreb] PHP Warning:  Missing argument 1 for NastupController::edit(), called in /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php on line 47 and defined in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 24
+[25-Apr-2019 21:08:54 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 26
+[25-Apr-2019 21:08:54 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 29
+[25-Apr-2019 21:08:54 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:08:54 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:09:15 Europe/Zagreb] PHP Warning:  Missing argument 1 for NastupController::edit(), called in /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php on line 47 and defined in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 24
+[25-Apr-2019 21:09:15 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 26
+[25-Apr-2019 21:09:15 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 29
+[25-Apr-2019 21:09:15 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:09:15 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:11:24 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:11:34 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:11:34 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:11:44 Europe/Zagreb] PHP Warning:  Missing argument 1 for NastupController::edit(), called in /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php on line 47 and defined in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 24
+[25-Apr-2019 21:11:44 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 26
+[25-Apr-2019 21:11:44 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 29
+[25-Apr-2019 21:11:44 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:11:44 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:11:50 Europe/Zagreb] PHP Warning:  Missing argument 1 for NastupController::edit(), called in /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php on line 47 and defined in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 24
+[25-Apr-2019 21:11:50 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 26
+[25-Apr-2019 21:11:50 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 29
+[25-Apr-2019 21:11:50 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:11:50 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:12:12 Europe/Zagreb] PHP Warning:  Missing argument 1 for NastupController::edit(), called in /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php on line 47 and defined in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 24
+[25-Apr-2019 21:12:12 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 26
+[25-Apr-2019 21:12:12 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 29
+[25-Apr-2019 21:12:12 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:12:12 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:12:19 Europe/Zagreb] PHP Warning:  Missing argument 1 for NastupController::edit(), called in /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php on line 47 and defined in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 24
+[25-Apr-2019 21:12:19 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 26
+[25-Apr-2019 21:12:19 Europe/Zagreb] PHP Notice:  Undefined variable: id in /home/hiperion/public_html/EvidencijaSvirki/app/controller/NastupController.php on line 29
+[25-Apr-2019 21:12:19 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:12:19 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:12:32 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:12:32 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:12:32 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:21:40 Europe/Zagreb] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/hiperion/public_html/EvidencijaSvirki/app/view/layout.phtml:4) in /home/hiperion/public_html/EvidencijaSvirki/app/model/Session.php on line 11
+[25-Apr-2019 21:21:43 Europe/Zagreb] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/hiperion/public_html/EvidencijaSvirki/app/view/layout.phtml:4) in /home/hiperion/public_html/EvidencijaSvirki/app/model/Session.php on line 11
+[25-Apr-2019 21:21:45 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:21:45 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:21:45 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:05 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:05 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:05 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:18 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:18 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:18 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:22 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:22 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[25-Apr-2019 21:22:22 Europe/Zagreb] PHP Notice:  Undefined property: stdClass::$ukupno in /home/hiperion/public_html/EvidencijaSvirki/app/view/nastupi/index.phtml on line 34
+[26-Apr-2019 08:11:45 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'oredr by name' at line 10' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php:24
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php(24): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(136): Svirac::read()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/controller/SviracController.php(20): SviracController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(49): SviracController->edit(8)
+#4 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#5 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Svirac.php on line 24
+[26-Apr-2019 08:33:05 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-8,8' at line 9' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:23
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(23): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(118): Bend::read()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): BendController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 23
+[26-Apr-2019 08:33:29 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-8,8' at line 9' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:23
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(23): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(118): Bend::read()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): BendController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 23
+[26-Apr-2019 08:33:35 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-8,8' at line 9' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:23
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(23): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(118): Bend::read()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): BendController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 23
+[26-Apr-2019 08:33:50 Europe/Zagreb] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-8,8' at line 9' in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php:23
+Stack trace:
+#0 /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php(23): PDOStatement->execute()
+#1 /home/hiperion/public_html/EvidencijaSvirki/app/controller/BendController.php(118): Bend::read()
+#2 /home/hiperion/public_html/EvidencijaSvirki/app/model/App.php(47): BendController->index()
+#3 /home/hiperion/public_html/EvidencijaSvirki/index.php(21): App::start()
+#4 {main}
+  thrown in /home/hiperion/public_html/EvidencijaSvirki/app/model/Bend.php on line 23

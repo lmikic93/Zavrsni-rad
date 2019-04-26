@@ -1,8 +1,9 @@
 <?php
 class Nastup
 {
-    public static function read()
+    public static function read($stranica)
     {
+        $poStranici=10;
         $db = Db::getInstance();
         $izraz = $db->prepare("
                 select 
@@ -15,6 +16,8 @@ class Nastup
                 b.naziv as bend_nastup
                 from nastup a left join
                 bend b on a.bend=b.sifra
+                order by a.datumpocetka
+                limit " . (($stranica*$poStranici) - $poStranici) . ",$poStranici
        ");
         $izraz->execute();
         return $izraz->fetchAll();

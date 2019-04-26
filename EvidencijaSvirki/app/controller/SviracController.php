@@ -107,36 +107,37 @@ class SviracController extends ProtectedController
 
 
 
-    // function index($stranica=1){
-    //     if($stranica<=0){
-    //         $stranica=1;
-    //     }
-    //     if($stranica===1){
-    //         $prethodna=1;
-    //     }else{
-    //         $prethodna=$stranica-1;
-    //     }
-    //     $sljedeca=$stranica+1;
+     function index($stranica=1){
+         if($stranica<=0){
+             $stranica=1;
+         }
+         if($stranica===1){
+             $prethodna=1;
+         }else{
+             $prethodna=$stranica-1;
+         }
+         $sljedeca=$stranica+1;
 
-    //     $view = new View();
-    //     $view->render(
-    //         'sviraci/index',
-    //         [
-    //         "sviraci"=>Svirac::read($stranica),
-    //         "prethodna"=>$prethodna,
-    //         "sljedeca"=>$sljedeca
-    //         ]
-    //     );
-    // }
-     function index(){
-        $view = new View();
-        $view->render(
-            'sviraci/index',
+         $view = new View();
+         $view->render(
+             'sviraci/index',
             [
-                "sviraci"=>Svirac::read()
+             "sviraci"=>Svirac::read($stranica),
+            "prethodna"=>$prethodna,
+            "sljedeca"=>$sljedeca
             ]
-        );
-    }
+         );
+     }
+    
+   //  function index(){
+      //  $view = new View();
+      //  $view->render(
+          //  'sviraci/index',
+         //   [
+           //     "sviraci"=>Svirac::read()
+          //  ]
+     //   );
+   // }
 
 
    

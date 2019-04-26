@@ -88,12 +88,27 @@ class NastupController extends ProtectedController
             ]
         );
     }
-    function index(){
+
+   
+
+    function index($stranica=1){
+        if($stranica<=0){
+             $stranica=1;
+         }
+         if($stranica===1){
+             $prethodna=1;
+         }else{
+             $prethodna=$stranica-1;
+         }
+         $sljedeca=$stranica+1;
+
         $view = new View();
         $view->render(
             'nastupi/index',
             [
-            "nastupi"=>Nastup::read()
+            "nastupi"=>Nastup::read($stranica),
+            "prethodna"=>$prethodna,
+            "sljedeca"=>$sljedeca
             ]
         );
     }

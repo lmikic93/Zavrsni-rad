@@ -110,12 +110,26 @@ class BendController extends ProtectedController
     }
 
 
-    function index(){
+    
+
+    function index($stranica=1){
+        if($stranica<=0){
+             $stranica=1;
+         }
+         if($stranica===1){
+             $prethodna=1;
+         }else{
+             $prethodna=$stranica-1;
+         }
+         $sljedeca=$stranica+1;
+
         $view = new View();
         $view->render(
             'bendovi/index',
             [
-            "bendovi"=>Bend::read()
+            "bendovi"=>Bend::read($stranica),
+            "prethodna"=>$prethodna,
+            "sljedeca"=>$sljedeca
             ]
         );
     }
