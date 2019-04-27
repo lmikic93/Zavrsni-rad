@@ -10,9 +10,15 @@
 }
 
 .fa-edit{
-    color: green;
+    /*color: green;*/
+    color: #2a79ba !important;
 }
-
+.callout.success {
+   /* background-color: #e1faea;
+    color: #0a0a0a; */
+    background-color: #2a79ba;
+    color: white;
+}
 .callout h1 {
     font-size: 2rem;
 }
@@ -82,4 +88,26 @@ body {
     background: #25ddf5;
 }
 
-   
+.menu li:hover {
+    background: #d4d4d4;
+}
+
+.page-naslov {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-naslov h4 {
+    background-color: #e6e6e6;
+    color: #1779ba;
+}
+
+.button.success {
+    color: #ffffff;
+    background-color: #2a79ba;
+}
+
+.button.success:hover, .button.success:focus {
+    background-color: #b8e6e6;
+    color: #0a0a0a;
+}

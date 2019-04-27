@@ -1,6 +1,6 @@
 <label>Datum početka
-    <input type="text" name="datumpocetka" 
-    value="<?php echo Request::post("datumpocetka") ?>" />
+    <input type="date" name="datumpocetka" 
+    value="<?php echo date("d-m-Y" ,strtotime(Request::post("datumpocetka"))) ?>" />
   </label>
 
   <label>Cijena
@@ -34,3 +34,5 @@
 
     <?php endforeach; ?>
     </select>
+
+

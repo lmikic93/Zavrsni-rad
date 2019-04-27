@@ -1,8 +1,8 @@
 <?php
 
 return [
-    "url"=>"http://polaznik07.edunova.hr/EvidencijaSvirki/",
-    "dev"=>true,
+    "url"=>"http://polaznik07.edunova.hr/",
+    "dev"=>false,
     "nazivApp" => "Evidencija svirki",
 
   /*  "db"=> [

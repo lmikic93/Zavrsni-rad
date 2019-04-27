@@ -1,10 +1,13 @@
+<div class="page-naslov">
+    <h4>Nastupi</h4>
+</div>
 <a href="<?php echo App::config("url") ?>nastup/prepareadd" class="success button expanded">
     Dodaj novi nastup
 </a>
 <table>
     <thead>
         <tr>
-            <th>Datum pocetka</th>
+            <th>Datum početka</th>
             <th>Cijena</th>
             <th>Adresa</th>
             <th>Vrsta svirke</th>
@@ -15,7 +18,8 @@
     <tbody>
         <?php foreach($nastupi as $nastup): ?>
         <tr>
-            <td><?php echo $nastup->datumpocetka ?></td>
+            <!--<td><?php echo $nastup->datumpocetka ?></td> -->
+            <td><?php echo date("d-m-Y" ,strtotime($nastup -> datumpocetka)) ?></td>
             <td><?php echo $nastup->cijena ?></td>
             <td><?php echo $nastup->adresa ?></td>
             <td><?php echo $nastup->vrstasvirke ?></td>  

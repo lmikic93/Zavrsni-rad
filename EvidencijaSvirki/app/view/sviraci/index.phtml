@@ -1,35 +1,51 @@
-<a href="<?php echo App::config("url") ?>svirac/add" class="success button expanded">
-    Dodaj novog svirača
-</a>    
-<div class="grid-x">
-    <?php foreach($sviraci as $svirac): ?>
-    <div class="cell large-3">
-        <div class="success callout operateri">
-            <!--<img src="https://randomuser.me/api/portraits/<?php echo rand(1,10)<5 ? "women" : "men" ?>/<?php echo rand(1,100) ?>.jpg" alt="" />-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lakeyboy_Silhouette.PNG" alt="" style="width: 150px; height: 150px;">
-            <h1><?php echo $svirac->ime?>
-    <br />
-    <?php echo $svirac->prezime?>
-    </h1>
-    <?php echo $svirac->email?>
-    <h4><?php echo $svirac->naziv_bend?></h4>
-    <hr />
-    <a href="<?php echo App::config("url") ?>svirac/prepareedit/<?php echo $svirac->sifra ?>">
-        <i class="fas fa-edit fa-2x"></i>
-    </a>
-
-    <?php if($svirac->ukupno==0): ?>
-        <a style="color: red;"
-            href="<?php echo App::config("url") ?>svirac/delete/<?php echo $svirac->sifra ?>">
-            <i class="fas fa-trash fa-2x"></i>
-        </a>
-    <?php endif; ?>
-
-    </div>
-    </div>
-
-    <?php endforeach; ?>
+<div class="page-naslov">
+    <h4>Svirači</h4>
 </div>
+<a href="<?php echo App::config("url") ?>svirac/prepareadd" class="success button expanded">
+    Dodaj novog svirača
+</a>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Ime</th>
+            <th class="hide-for-small-only">Prezime</th>
+            <th class="hide-for-small-only">Email</th>
+            <th class="hide-for-small-only">Bend</th>
+            <th></th>
+            <th>Uredi/Obriši</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($sviraci as $svirac): ?>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lakeyboy_Silhouette.PNG" alt="" style="width: 50px; height: 50px;"></td>
+            <td><?php echo $svirac->ime ?></td>
+            <td class="hide-for-small-only"><?php echo $svirac->prezime ?></td>
+            <td class="hide-for-small-only"><?php echo $svirac->email ?></td>
+            <td class="hide-for-small-only"><h5><?php echo $svirac->naziv_bend ?></h5></td>
+            <td>
+            
+            
+            
+            </td>
+            <td> 
+                <a href="<?php echo App::config("url") ?>svirac/prepareedit/<?php echo $svirac->sifra ?>">
+                    <i class="fas fa-edit fa-2x"></i>
+                </a>
+
+                <?php if($svirac->ukupno==0): ?>
+                    <a style="color: red;"
+                     href="<?php echo App::config("url") ?>svirac/delete/<?php echo $svirac->sifra ?>">
+                        <i class="fas fa-trash fa-2x"></i>
+                    </a>
+                <?php endif; ?>
+            
+             </td>
+        </tr>
+        <?php endforeach;?>
+    </tbody>
+</table>
 <nav aria-label="Pagination">
   <ul class="pagination text-center">
     <li class="pagination-previous"><a href="<?php echo App::config("url") ?>svirac/index/<?php echo $prethodna ?>" aria-label="Next page">Prethodna <span class="show-for-sr">page</span></a></li>

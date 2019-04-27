@@ -11,10 +11,22 @@
     <input type="text" name="email" 
     value="<?php echo Request::post("email") ?>" />
   </label>
-  <label>Bend
-    <input type="number" name="bend" 
-    value="<?php echo Request::post("bend") ?>" />
-  </label>
+  <label for="bend">Bend</label>
+    <select name="bend" id="bend">
+    <option value="0">Odaberi bend</option>
+
+    <?php foreach(Bend::read(1) as $bend): ?>      
+
+    <option 
+
+        <?php if(Request::post("bend")==$bend->sifra):?>
+        selected="selected" 
+        <?php endif;?>
+
+        value="<?php echo $bend->sifra ?>"><?php echo $bend->naziv ?></option>
+
+    <?php endforeach; ?>
+    </select>
 
 
 
